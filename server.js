@@ -24,6 +24,11 @@ mongoose.connect(process.env.MONGO_URI, {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
   });
+
+  // Serve the success page
+app.get('/success', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'success.html'));
+});
   
 
 app.post('/submit', async (req, res) => {
