@@ -3,7 +3,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const User = require('./models/user');
-console.log("Looking for user model at: ", require.resolve('./models/user'));
 const app = express();
 const PORT = 3000;
 
